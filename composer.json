@@ -8,6 +8,7 @@
       "email"
     ],
     "homepage": "https://github.com/dlw-libs/laravel-sparkpost-transport",
+    "license": "MIT",
     "type": "library",
     "require": {
       "php": ">=7.2.0",
