@@ -1,0 +1,37 @@
+{
+    "name": "dlw-libs/laravel-sparkpost-transport",
+    "description": "Sparkpost mail transport replacement for laravel >= 6",
+    "keywords": [
+      "sparkpost",
+      "laravel",
+      "mail",
+      "email"
+    ],
+    "homepage": "https://github.com/dlw-libs/laravel-sparkpost-transport",
+    "type": "library",
+    "require": {
+      "php": ">=7.2.0",
+      "guzzlehttp/guzzle": "^6.3",
+      "illuminate/mail": "^6.0",
+      "illuminate/support": "^6.0",
+      "php-http/guzzle6-adapter": "^2.0",
+      "sparkpost/sparkpost": "^2.2"
+    },
+    "autoload": {
+      "psr-4": {
+        "Dlw\\Mail\\": "src"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Dlw\\Mail\\SparkPostTransportServiceProvider"
+        ]
+      }
+    },
+    "config": {
+      "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
