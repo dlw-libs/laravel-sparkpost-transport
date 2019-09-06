@@ -170,7 +170,7 @@ class SparkPostTransport extends Transport
      */
     protected function getHtmlBody(Swift_Mime_SimpleMessage $message){
         if( $message->getBodyContentType() === 'text/plain' )
-            return '';
+            return null;
         return $message->getBody();
     }
 
